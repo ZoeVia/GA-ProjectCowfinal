@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     private Rigidbody2D rigidbody2D;
     public Camera camera;
     
+    
 
 	// Use this for initialization
 	void Start ()
@@ -21,8 +22,9 @@ public class PlayerInput : MonoBehaviour
     void Update()
 
     {
-        camera.transform.position = transform.position-new Vector3(0,0,10);
+        camera.transform.position += new Vector3(0.06f,0,0);
         rigidbody2D.transform.position += new Vector3(0.06f,0,0);
+
         /*
         float horizontalAxis = Input.GetAxis("Horizontal");
         Vector2 velocity =
@@ -52,4 +54,17 @@ public class PlayerInput : MonoBehaviour
             SceneManager.LoadScene("FinDuJeu");
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+            if ( collision.tag == "Bonus carotte")
+            {
+                collision.gameObject.SetActive(false);
+            }
+
+    }
+
+
+
+
+
 }

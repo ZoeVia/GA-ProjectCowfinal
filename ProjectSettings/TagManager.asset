@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Bonus carotte
+  - ShowOnPause
+  - soucoupe volante
   layers:
   - Default
   - TransparentFX
