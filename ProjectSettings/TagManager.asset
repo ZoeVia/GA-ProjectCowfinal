@@ -8,6 +8,9 @@ TagManager:
   - Bonus carotte
   - ShowOnPause
   - soucoupe volante
+  - DeathScreen
+  - Musique de base
+  - gravity
   layers:
   - Default
   - TransparentFX

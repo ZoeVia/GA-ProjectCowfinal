@@ -8,8 +8,8 @@ public class PlayerInput : MonoBehaviour
     public float playerVelocity = 10f;
     private Rigidbody2D rigidbody2D;
     public Camera camera;
-    
-    
+
+    public AudioSource asource;
 
 	// Use this for initialization
 	void Start ()
@@ -23,7 +23,7 @@ public class PlayerInput : MonoBehaviour
 
     {
         camera.transform.position += new Vector3(0.06f,0,0);
-        rigidbody2D.transform.position += new Vector3(0.06f,0,0);
+        transform.position += new Vector3(0.06f,0,0);
 
         /*
         float horizontalAxis = Input.GetAxis("Horizontal");
@@ -38,8 +38,13 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+
+            Vector2 velocity =
+            new Vector2(rigidbody2D.velocity.x, 0.01f);
+            rigidbody2D.velocity = velocity;
             rigidbody2D.gravityScale *=- 1;
             GetComponent<SpriteRenderer>().flipY = !GetComponent<SpriteRenderer>().flipY;
+            asource.Play();
         }
         
         
