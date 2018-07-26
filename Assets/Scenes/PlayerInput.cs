@@ -51,7 +51,8 @@ public class PlayerInput : MonoBehaviour
         {
             Destroy(gameObject);
             // trigger fin du jeu
-            SceneManager.LoadScene("Game Over Screen");
+            SceneManager.LoadScene("FinDuJeu");
+                
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
