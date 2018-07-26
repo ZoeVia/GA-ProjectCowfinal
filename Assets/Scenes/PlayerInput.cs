@@ -10,9 +10,10 @@ public class PlayerInput : MonoBehaviour
     public Camera camera;
 
     public AudioSource asource;
+    public AudioSource sonmeuh;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
 
@@ -40,11 +41,12 @@ public class PlayerInput : MonoBehaviour
         {
 
             Vector2 velocity =
-            new Vector2(rigidbody2D.velocity.x, 0.01f);
+            new Vector2(rigidbody2D.velocity.x, 0);
             rigidbody2D.velocity = velocity;
             rigidbody2D.gravityScale *=- 1;
             GetComponent<SpriteRenderer>().flipY = !GetComponent<SpriteRenderer>().flipY;
-            asource.Play();
+            //if (!asource.isPlaying)
+                asource.Play();
         }
         
         
@@ -65,7 +67,10 @@ public class PlayerInput : MonoBehaviour
             if ( collision.tag == "Bonus carotte")
             {
                 collision.gameObject.SetActive(false);
+            //if (!asource.isPlaying)
+                //sonmeuh.Play();
             }
+
 
     }
 
