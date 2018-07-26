@@ -14,7 +14,7 @@ public class Scriptesoucoupe : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = transform.position+new Vector3(0.06f, 0, 0);
-        asource.Play();
+        
         
 	}
 }
