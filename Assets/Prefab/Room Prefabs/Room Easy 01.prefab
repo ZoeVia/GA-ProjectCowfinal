@@ -246,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 1100911682875062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.709362, y: 9.2, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.7697598}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 4898031107881878}
   m_RootOrder: 2
@@ -259,7 +259,7 @@ Transform:
   m_GameObject: {fileID: 1807372320360962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.7144685, y: 1.5, z: 0}
-  m_LocalScale: {x: 0.26425326, y: 0.2474029, z: 0.7697598}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 4898031107881878}
   m_RootOrder: 5
@@ -298,7 +298,7 @@ Transform:
   m_GameObject: {fileID: 1418074682145534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.721182, y: 9.2, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.7697598}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 4898031107881878}
   m_RootOrder: 3
@@ -324,7 +324,7 @@ Transform:
   m_GameObject: {fileID: 1046055361385356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.700624, y: 1.5, z: 0}
-  m_LocalScale: {x: 0.26425326, y: 0.2474029, z: 0.7697598}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 4898031107881878}
   m_RootOrder: 7
@@ -337,7 +337,7 @@ Transform:
   m_GameObject: {fileID: 1177250831858308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.7066503, y: 9.2, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.7697598}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 4898031107881878}
   m_RootOrder: 4
@@ -350,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 1963711223946096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.6867604, y: 1.5, z: 0}
-  m_LocalScale: {x: 0.26425326, y: 0.2474029, z: 0.7697598}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 4898031107881878}
   m_RootOrder: 6
@@ -670,9 +670,12 @@ MonoBehaviour:
   - {fileID: 1010722513255446, guid: a0f4bbce73ebd8b4bba990cd392a108f, type: 2}
   - {fileID: 1867903583156988, guid: e0bfa91bcb330514abbb9aee51539444, type: 2}
   - {fileID: 1650802389025064, guid: 0fbecace88ed3b54896e78b9a85b7e33, type: 2}
+  - {fileID: 1246808765944556, guid: add8a1285bc53ee49b770a2690c54116, type: 2}
+  - {fileID: 1527204463910330, guid: ab3c22ef07121cd479c84243f9d7bd90, type: 2}
   MediumMap:
   - {fileID: 1191843511057566, guid: 5df03958ffe62da459faa92bfc20ad35, type: 2}
   - {fileID: 1758553265958218, guid: 3537fb18cfa8c0947870f771090f5e60, type: 2}
+  - {fileID: 1125734327595544, guid: c77675d31a32d064a86c522e2bc06b54, type: 2}
   HardMap:
   - {fileID: 1917295814355376, guid: 1369226f49151954bb58b72036dbf36e, type: 2}
   - {fileID: 1364264518579134, guid: 7bf5a0074f64f794dba4c3d858e70635, type: 2}
