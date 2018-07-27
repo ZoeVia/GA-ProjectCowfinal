@@ -2521,6 +2521,7 @@ GameObject:
   - component: {fileID: 1514795967}
   - component: {fileID: 1514795966}
   - component: {fileID: 1514795968}
+  - component: {fileID: 1514795969}
   m_Layer: 0
   m_Name: soucoupe volante
   m_TagString: soucoupe volante
@@ -2563,7 +2564,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 762529668b0b4b441965adbac7abd633, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d188840239abe245a1a541e2273fbaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2580,7 +2581,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1514795965}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.6787076, y: 2.403569, z: 0}
+  m_LocalPosition: {x: -4.79, y: -0.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2599,6 +2600,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 519420031}
   asource: {fileID: 861664313}
+--- !u!95 &1514795969
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1514795965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df450d1eaa2dd1d43a3fd4686e207059, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1540547359
 GameObject:
   m_ObjectHideFlags: 0
