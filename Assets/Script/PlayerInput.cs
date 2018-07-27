@@ -45,8 +45,9 @@ public class PlayerInput : MonoBehaviour
             rigidbody2D.velocity = velocity;
             rigidbody2D.gravityScale *=- 1;
             GetComponent<SpriteRenderer>().flipY = !GetComponent<SpriteRenderer>().flipY;
-            //if (!asource.isPlaying)
-                asource.Play();
+            asource.Play();
+            
+            
         }
         
         
@@ -67,8 +68,8 @@ public class PlayerInput : MonoBehaviour
             if ( collision.tag == "Bonus carotte")
             {
                 collision.gameObject.SetActive(false);
-            //if (!asource.isPlaying)
-                //sonmeuh.Play();
+            sonmeuh.Play();
+                
             }
 
 
