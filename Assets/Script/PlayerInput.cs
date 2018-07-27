@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     private Rigidbody2D rigidbody2D;
     public Camera camera;
 
+    public AudioSource crash;
     public AudioSource asource;
     public AudioSource sonmeuh;
 
@@ -60,8 +61,17 @@ public class PlayerInput : MonoBehaviour
             Destroy(gameObject);
             // trigger fin du jeu
             SceneManager.LoadScene("FinDuJeu");
-                
+            
         }
+        if(collision.transform.tag == "soucoupe volante")
+        {
+
+            Destroy(gameObject);
+            SceneManager.LoadScene("FinDuJeu");
+           
+
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

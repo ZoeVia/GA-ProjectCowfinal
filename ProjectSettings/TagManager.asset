@@ -11,6 +11,8 @@ TagManager:
   - DeathScreen
   - Musique de base
   - gravity
+  - mechant
+  - crash in ufo
   layers:
   - Default
   - TransparentFX
