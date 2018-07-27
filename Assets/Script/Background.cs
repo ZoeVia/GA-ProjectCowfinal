@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Background : MonoBehaviour {
+
     public GameObject Ciel;
     public float startX;
     public float y;
     public float width;
+    public Camera mainCamera;
     private GameObject instance1;
     private GameObject instance2;
 
@@ -19,13 +21,13 @@ public class Background : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Camera.main.transform.position.x > instance1.transform.position.x)
+        if (mainCamera.transform.position.x > instance1.transform.position.x)
         {
-            instance2.transform.position = new Vector3(instance1.transform.position.x + width, y, 0);
+            instance2.transform.position = new Vector3(instance1.transform.position.x + width, y, 2);
         }
-        if (Camera.main.transform.position.x > instance2.transform.position.x)
+        if (mainCamera.transform.position.x > instance2.transform.position.x)
         {
-            instance1.transform.position = new Vector3(instance2.transform.position.x + width, y, 0);
+            instance1.transform.position = new Vector3(instance2.transform.position.x + width, y, 2);
         }
     }
 }
