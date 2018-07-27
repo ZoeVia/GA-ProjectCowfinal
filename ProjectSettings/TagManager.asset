@@ -45,14 +45,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 2430118539
     locked: 0
   - name: Ground
     uniqueID: 315643341
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Environnement
     uniqueID: 707834465
