@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EasyMap:
-  - {fileID: 0}
+  - {fileID: 1352476436033026, guid: aae2ab6cca44c66489f716af35da328f, type: 2}
   - {fileID: 1010722513255446, guid: a0f4bbce73ebd8b4bba990cd392a108f, type: 2}
   - {fileID: 1867903583156988, guid: e0bfa91bcb330514abbb9aee51539444, type: 2}
   - {fileID: 1650802389025064, guid: 0fbecace88ed3b54896e78b9a85b7e33, type: 2}
@@ -1280,7 +1280,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2106544061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: -0.20703125}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 301486189}
