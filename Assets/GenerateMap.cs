@@ -23,7 +23,9 @@ public class GenerateMap : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            Instantiate(EasyMap[Random.Range(0, EasyMap.Count-1)], Spawner.transform.position, Quaternion.identity);
+            int rdm = Random.Range(0, EasyMap.Count - 1);
+            Debug.Log(rdm);
+            Instantiate(EasyMap[rdm], Spawner.transform.position, Quaternion.identity);
         }
     }
 }
