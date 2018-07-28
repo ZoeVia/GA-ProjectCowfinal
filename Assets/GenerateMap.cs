@@ -10,6 +10,8 @@ public class GenerateMap : MonoBehaviour
     public List<GameObject> HardMap;
     public GameObject Spawner;
 
+    mapCounter MapCounter;
+
     private int passedRoomsCount;
 
     private int MEDIUM = 6;
@@ -19,6 +21,7 @@ public class GenerateMap : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        MapCounter = FindObjectOfType<mapCounter>();
         passedRoomsCount = 0;
     }
 
@@ -32,23 +35,24 @@ public class GenerateMap : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            passedRoomsCount++;
-            if (passedRoomsCount < MEDIUM)
+            MapCounter.passedRoomsCount++;
+
+            if (MapCounter.passedRoomsCount < MEDIUM)
             {
-                int rdm = Random.Range(0, EasyMap.Count - 1);
-                Debug.Log(rdm);
+                int rdm = Random.Range(0, EasyMap.Count);
+                Debug.Log("easy"+rdm);
                 Instantiate(EasyMap[rdm], Spawner.transform.position, Quaternion.identity);
             }
-            else if (passedRoomsCount >= MEDIUM && passedRoomsCount < HARD)
+            else if (MapCounter.passedRoomsCount >= MEDIUM && MapCounter.passedRoomsCount < HARD)
             {
-                int rdm = Random.Range(0, MediumMap.Count - 1);
-                Debug.Log(rdm);
+                int rdm = Random.Range(0, MediumMap.Count);
+                Debug.Log("mwdium" + rdm);
                 Instantiate(MediumMap[rdm], Spawner.transform.position, Quaternion.identity);
             }
-            else if (passedRoomsCount >= HARD)
+            else if (MapCounter.passedRoomsCount >= HARD)
             {
-                int rdm = Random.Range(0, HardMap.Count - 1);
-                Debug.Log(rdm);
+                int rdm = Random.Range(0, HardMap.Count);
+                Debug.Log("hard" + rdm);
                 Instantiate(HardMap[rdm], Spawner.transform.position, Quaternion.identity);
             }
         }

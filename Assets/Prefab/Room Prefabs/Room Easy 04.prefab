@@ -170,6 +170,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4851184634570264}
+  - component: {fileID: 114513285175083494}
   m_Layer: 0
   m_Name: Room Easy 04
   m_TagString: Untagged
@@ -882,6 +883,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.925312, y: 3.81236}
   m_EdgeRadius: 0
+--- !u!114 &114513285175083494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650802389025064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6bf0f7b92c917348ab93106bee7a005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TempsPourDetruireRoom: 20
 --- !u!114 &114537272426182502
 MonoBehaviour:
   m_ObjectHideFlags: 1

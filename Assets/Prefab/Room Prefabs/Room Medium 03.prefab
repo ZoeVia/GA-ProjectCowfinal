@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4347160825874722}
+  - component: {fileID: 114623403837340284}
   m_Layer: 0
   m_Name: Room Medium 03
   m_TagString: Untagged
@@ -631,6 +632,18 @@ MonoBehaviour:
   - {fileID: 1036913057291468, guid: 22d25bb1f5016894ba568beeaaf49ed4, type: 2}
   - {fileID: 1708198261716662, guid: b48c67485f1bdd548ae29884e0135258, type: 2}
   Spawner: {fileID: 1252204816596224}
+--- !u!114 &114623403837340284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125734327595544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6bf0f7b92c917348ab93106bee7a005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TempsPourDetruireRoom: 20
 --- !u!212 &212022450745295582
 SpriteRenderer:
   m_ObjectHideFlags: 1

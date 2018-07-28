@@ -328,6 +328,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4890052943354188}
+  - component: {fileID: 114438846778265052}
   m_Layer: 0
   m_Name: Room Hard 05
   m_TagString: Untagged
@@ -1317,6 +1318,18 @@ MonoBehaviour:
   - {fileID: 1797950095633936, guid: 6d2837119dd55a8478e125a8e900cb8b, type: 2}
   - {fileID: 1708198261716662}
   Spawner: {fileID: 1148297300614992}
+--- !u!114 &114438846778265052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1708198261716662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6bf0f7b92c917348ab93106bee7a005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TempsPourDetruireRoom: 20
 --- !u!212 &212042529248671116
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1488,7 +1501,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c5e02ad0feecfee40a7ed2dfdf8ccf03, type: 3}
-  m_Color: {r: 0.18527679, g: 0.990566, b: 0.023362402, a: 1}
+  m_Color: {r: 0.18527679, g: 0.990566, b: 0.023362402, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2028,7 +2041,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c5e02ad0feecfee40a7ed2dfdf8ccf03, type: 3}
-  m_Color: {r: 0.18527679, g: 0.990566, b: 0.023362402, a: 1}
+  m_Color: {r: 0.18527679, g: 0.990566, b: 0.023362402, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

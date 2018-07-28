@@ -44,6 +44,7 @@ public class PlayerInput : MonoBehaviour
             Vector2 velocity =
             new Vector2(rigidbody2D.velocity.x, 0);
             rigidbody2D.velocity = velocity;
+          
             rigidbody2D.gravityScale *=- 1;
             GetComponent<SpriteRenderer>().flipY = !GetComponent<SpriteRenderer>().flipY;
             asource.Play();

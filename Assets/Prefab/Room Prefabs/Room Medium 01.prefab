@@ -85,6 +85,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4682834963341926}
+  - component: {fileID: 114498850289899000}
   m_Layer: 0
   m_Name: Room Medium 01
   m_TagString: Untagged
@@ -766,6 +767,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3550538, y: 1.8387517}
   m_EdgeRadius: 0
+--- !u!114 &114498850289899000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1191843511057566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6bf0f7b92c917348ab93106bee7a005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TempsPourDetruireRoom: 20
 --- !u!114 &114782827822929358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -794,7 +807,7 @@ MonoBehaviour:
   - {fileID: 1797950095633936, guid: 6d2837119dd55a8478e125a8e900cb8b, type: 2}
   - {fileID: 1036913057291468, guid: 22d25bb1f5016894ba568beeaaf49ed4, type: 2}
   - {fileID: 1708198261716662, guid: b48c67485f1bdd548ae29884e0135258, type: 2}
-  Spawner: {fileID: 0}
+  Spawner: {fileID: 1153208460041062}
 --- !u!212 &212003169507380932
 SpriteRenderer:
   m_ObjectHideFlags: 1
