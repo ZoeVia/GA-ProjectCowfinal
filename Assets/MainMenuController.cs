@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverController : MonoBehaviour {
+public class MainMenuController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -15,14 +15,13 @@ public class GameOverController : MonoBehaviour {
 		
 	}
 
-    public void Replay()
+    public void StartGame()
     {
         SceneManager.LoadScene("Scene principale");
     }
 
-    public void BackToMenu()
+    public void ExitGame()
     {
-        SceneManager.LoadScene("Menu principal");
+        Application.Quit();
     }
-
 }
